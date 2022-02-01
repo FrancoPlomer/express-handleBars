@@ -1,0 +1,25 @@
+
+<table class="table">
+    <thead>
+        <tr>
+        <th scope="col">Titulo</th>
+        <th scope="col">precio</th>
+        <th scope="col">imagen</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#if productos}}
+            {{#each productos}} 
+                <tr>
+                <td>{{this.title}}</td>
+                <td>{{this.price}}</td>
+                <td><img src="{{this.url}}" alt="producto" height="100rem" width="100rem"></td>
+                </tr>
+            {{/each}}
+        {{/if}}
+    </tbody>
+</table>
+
+<form method="GET" action="http://localhost:8080/static">
+    <button type="submit" class="btn btn-primary">Volver</button>
+</form>

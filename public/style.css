@@ -1,0 +1,14 @@
+body{
+    width: 30%;
+    margin: 10rem auto;
+    
+}
+
+body > form{
+    display: flex;
+    flex-direction: column;
+}
+body > p{
+    margin-top: 2rem;
+}
+
